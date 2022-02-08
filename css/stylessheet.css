@@ -34,6 +34,7 @@
     /*MAIN Styling*/
     /*Header styling*/
     header {
+        position: relative;
         height: auto;
         text-align: left;
     /*    color: #8cceaa;*/
@@ -162,43 +163,39 @@
     .index-heading {
         text-align: center;
     }
-    
+
+       /* Styling content */
+       .content {
+           display: block;
+      text-align: center;
+
+    }
+
     /*Styling bullet points & image card on Index page*/
     .bullit-points  {
-        padding-top: 50px;
-        color: #8c3784;
-        list-style-position: outside;
-        text-align: left;
-        float: none;
-        font-size: 25px;
-        width: 80%;
-        display: block;
-        margin-left: 300px;
+        display:inline-block;
         margin-bottom: -50px;
     }
     
-    .bullit-points ul {
+    .bullit-points ul li {
         list-style: none;
-        
+        font-size: 25px;
     }
     
     .bullit-points ul li::before {
         content: "\2022";
         color: #D6DB79;
-        font-weight: bold;
+        font-size: 33px;
         margin-right: 15px;
     }
     
-    /*Styling image card on Index page*/
-    .card-home {
-        float: right;
-        padding-bottom: 1rem;
-        padding-right: 2rem;
-        margin-top: -160px;
-        margin-right: 150px;
-        margin-bottom: 150px;
-        text-align: center;
-    }
+        /* Video styling */
+        .video-container {
+            display: inline-block;
+            padding-top: 2rem;
+            margin-left: 3rem;
+            text-align: right;
+        }
     
     
     /*Styling horizontal row*/
@@ -220,13 +217,13 @@
     
     /*EVENT PAGE*/
     /*Styling cards for the Event page*/
-    .event-cards {
+    /* .event-cards {
         margin-top: 30px;
         margin-bottom: 100px;
         text-align: center;
     }
-    
-    .events-info {
+     */
+    /* .events-info {
         border-radius: 10px;
         background-color: #FFF;
         border-color: #8c3784;
@@ -241,7 +238,7 @@
         text-align: left;
         column-count: 3;
         column-gap: 40px; 
-    }
+    } */
     
     /*Styling for the months in the event cards*/
     .events-month {
@@ -391,30 +388,18 @@
     }
     .footer {
         padding-top: 20px;
-        padding-bottom: 20px;
         background-color: #8c3784;
         background-repeat: no-repeat;
-        clear: both;
         width: 100%;
-        height: auto;
-        bottom: 0px;
-        vertical-align: bottom;
-        font-size: small;
     }
-    .footer ul li {
-        display: inline-block;
-        text-align: left;
-        text-decoration: none;
-        float: left;
-        padding-bottom: 15px;
-    }
-    .footer ul li a {
+ 
+    /* .footer ul li a {
         text-align: left;
         text-decoration: none;
         padding: 0.5rem 1rem;
         color: #fff;
         float: none;
-    }
+    } */
     
     /*Styling footer information texts*/
      .footer-information {
@@ -459,7 +444,7 @@
     
     .footer .social-icons ul li {
         margin-left: 20px;
-        float: left;
+        text-align: left;
         width: 20px;
         height: 20px;
         display: inline-block;
@@ -519,10 +504,8 @@
     
     /*Margin adjustment CTA-buttons for the Index, Pricing, Schedule, Contact & Register pages*/
     .index-btn {
-        margin-top: 90px;
-        margin-left: 320px;
-        transition: box-shadow .5s;
-        margin-bottom: 150px;
+        text-align: center;
+        margin-top: 60px; 
     }
     
     .index-btn :hover{
@@ -563,7 +546,7 @@
     
     /*ADJUSTMENTS*/
     
-    /*Styling for the paragraph for the Agenda, Events, Pricing, Schedule, Photos, Videos, Register, Contact & About pages */
+    /*Styling for the paragraph for the Agenda, Events, Pricing, Schedule, Media, Register, Contact & About pages */
     .introduction-paragraph {
         margin-left: 20px;
         display: inline-block;
