@@ -6,17 +6,16 @@
 <meta name="keywords" content="Dance, Fitdance, Brazilian, Funkmusic, Healthy, Movement">
 <meta name="author" content="Gordon Gravenbeek">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
-<link rel="icon" href="../images/icons/favicon.ico" type="image/x-icon">
 <title>Photos</title>
 <link href="../css/stylessheet.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
 <div class="wrapper">
+
 <!--Logo on the left side of the header-->
 <header>
-<a href="../index.html"><img class="logo" src="../images/icons/logo1.svg" width="80" height="80" alt="logo Brazilian Fitdance"/></a>
+<a href="../index.html"><img class="logo" src="../images/icons/logo1.svg" alt="logo Brazilian Fitdance"/></a>
+
 <!--Navigation menu-->
 <nav>
 <ul>
@@ -25,80 +24,127 @@
 <li><a href="events.html">EVENTS</a></li>
 <li><a href="pricing.html">PRICING</a></li>
 <li><a href="schedule.html">SCHEDULE</a></li>
-<li class="dropdown"><a class="highlight-active" href="#">MEDIA <i class="fas fa-caret-down"></i></a>
-<ul class="dropdown-content">
 <li><a href="photos.html" class="highlight-active">PHOTOS</a></li>
 <li><a href="videos.html">VIDEOS</a></li>
-</ul>
-</li>
-<li class="dropdown"><a href="#">FITDANCE <i class="fas fa-caret-down"></i></a> 
-<ul class="dropdown-content">
-<li><a href="about.html">ABOUT</a></li>
-<li><a href="contact.html">CONTACT</a></li>
 <li><a href="register.html">REGISTER</a></li>
-<li><a href="teacher.html">THE TEACHER</a></li>
-</ul>
-</li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a href="about.html">ABOUT</a></li>
 </ul>
 </nav>
 </header>
 <main>
 <img src="../images/hero.png" alt="hero image Brazilian Fitdance" class="hero-image">
 <section>
-<!--Information text about photos-->
-<div class="introduction-paragraph">
+<div class="photo-header">
 <h1>PHOTOS</h1>
-<p>Check out the photos of the latest dance classes.</p>
+<hr>
+</div>
+	
+<!--Photogallery-->
+<!--Slideshow container-->
+<div class="slideshow-container">
+<div class="slide fade">
+<img src="../images/celebration-group.jpg" alt="image of group celebration" style="width:80%">
+</div>
+
+<div class="slide fade">
+<img src="../images/group-standing-daylight.jpg" alt="image of dance group standing" style="width:80%">
+</div>
+
+<div class="slide fade">
+<img src="../images/dance-group-v-pose.jpg" alt="image of dance group v-shape pose" style="width:80%">
+</div>
+	
+<div class="slide fade">
+<img src="../images/group-photo-split.jpg" alt="image of posing dance group with a split" style="width:80%">
+</div>
+	
+<div class="slide fade">
+<img src="../images/action-photo-group-dancing.jpg" alt="image of group dancing" style="width:80%">
+</div>
+	
+<div class="slide fade">
+<img src="../images/group-with-diego-laying.jpg" alt="image of group posing" style="width:80%">
+</div>
+	
+<div class="slide fade">
+<img src="../images/solo-image-member.jpg" alt="image of a member smiling" style="width:80%">
+</div>
+
+<div class="slide fade">
+<img src="../images/image-member-arm-stretching.jpg" alt="group image with a member stretching her arm" style="width:80%">
+</div>
+	
+<div class="slide fade">
+<img src="../images/group-image-one-male.jpg" alt="group image of after the dance class" style="width:80%">
+</div>
+	
+<div class="slide fade">
+<img src="../images/group-image-daylight-posing.jpg" alt="group in the daylight" style="width:80%">
+</div>
+
+<div class="slide fade">
+<img src="../images/group-image-daylight-hands-up.jpg" alt="group image in the daylight posing with hands up" style="width:80%">
+</div>
+
+<!--Next and previous buttons-->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+	
+<!-- The dots buttons -->
+<div class="dot-area">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+<span class="dot" onclick="currentSlide(8)"></span>
+<span class="dot" onclick="currentSlide(9)"></span>
+<span class="dot" onclick="currentSlide(10)"></span>
+<span class="dot" onclick="currentSlide(11)"></span>
 </div>
 </section>
-<hr>
-<!--Photogallery-->
-<div class="image-gallery">
-<a href="../images/afb1.jpg"><img src="../images/afb1.jpg" alt="group-image-1" style="width:25%"></a>
-<a href="../images/afb2.jpg"><img src="../images/afb2.jpg" alt="group-image-2" style="width:25%"></a>
-<a href="../images/afb3.jpg"><img src="../images/afb3.jpg" alt="group-image-3" style="width:25%"></a>
-<a href="../images/afb4.jpg"><img src="../images/afb4.jpg" alt="group-image-4" style="width:25%"></a>
-<a href="../images/afb5.jpg"><img src="../images/afb5.jpg" alt="action-image-dancing" style="width:25%"></a>
-<a href="../images/afb9.jpg"><img src="../images/afb9.jpg" alt="group-image-5" style="width:25%"></a>
-<a href="../images/afb13.jpg"><img src="../images/afb13.jpg" alt="solo-image" style="width:25%"></a>
-<a href="../images/afb15.jpg"><img src="../images/afb15.jpg" alt="group-image-6" style="width:25%"></a>
-<a href="../images/afb16.jpg"><img src="../images/afb16.jpg" alt="group-image-7" style="width:25%"></a>
-<a href="../images/afb6.jpg"><img src="../images/afb6.jpg" alt="group-image-8" style="width:25%"></a>
-<a href="../images/afb18.jpg"><img src="../images/afb18.jpg" alt="group-image-9" style="width:25%"></a>
-</div>
 </main>
 
 <!--Footer navigation-->
-  <footer class="footer">
-  <div class="navigation-footer">
-  <ul>
-  <li><a href="../index.html">HOME</a></li>
-  <li><a href="agenda.html">AGENDA</a></li>
-  <li><a href="events.html">EVENTS</a></li>
-  <li><a href="pricing.html">PRICING</a></li>
-  <li><a href="schedule.html">SCHEDULE</a></li>
-  <li><a href="photos.html" class="highlight-active">PHOTOS</a></li>
-  <li><a href="videos.html">VIDEOS</a></li>
-  <li><a href="register.html">REGISTER</a></li>
-  <li><a href="contact.html">CONTACT</a></li>
-  <li><a href="about.html">ABOUT</a></li>
-  </ul>
-  </div>
+<footer class="footer">
+<div class="navigation-footer">
+<ul>
+<li><a href="../index.html">HOME</a></li>
+<li><a href="agenda.html">AGENDA</a></li>
+<li><a href="events.html">EVENTS</a></li>
+<li><a href="pricing.html">PRICING</a></li>
+<li><a href="schedule.html">SCHEDULE</a></li>
+<li><a href="photos.html" class="highlight-active">PHOTOS</a></li>
+<li><a href="videos.html">VIDEOS</a></li>
+<li><a href="register.html">REGISTER</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a href="about.html">ABOUT</a></li>
+</ul>
+</div>
+
 <!--Social media icons-->
- <div class="social-icons">
- <ul>
- <li><a href="mailto:brazilianfitdanceinamsterdam@gmail.com"><img src="../images/icons/mail.svg" alt="Email logo"/></a></li>
- <li><a href="https://api.whatsapp.com/send/?phone=31682935487&text&app_absent=0"><img src="../images/icons/whatsapp.svg" alt="Whatsapp logo"/></a></li>
- <li><a href="https://www.instagram.com/fitdance_amsterdam/" target="_blank"><img src="../images/icons/instagram.svg" alt="Instagram logo"></a></li>
- <li><a href="https://www.facebook.com/groups/423004131702199/?ref=share"><img src="../images/icons/facebook.svg" alt="Facebook logo"/></a></li>
- </ul>
- </div>
- <hr>  
+<div class="social-icons">
+<ul>
+<li><a href="mailto:brazilianfitdanceinamsterdam@gmail.com"><img src="../images/icons/mail.svg" alt="Email logo"/></a></li>
+<li><a href="https://api.whatsapp.com/send/?phone=31682935487&text&app_absent=0"><img src="../images/icons/whatsapp.svg" alt="Whatsapp logo"/></a></li>
+<li><a href="https://www.instagram.com/fitdance_amsterdam/" target="_blank"><img src="../images/icons/instagram.svg" alt="Instagram logo"></a></li>
+<li><a href="https://www.facebook.com/groups/423004131702199/?ref=share"><img src="../images/icons/facebook.svg" alt="Facebook logo"/></a></li>
+</ul>
+</div>
+<hr>  
+	  
 <!--Privacy policy & Terms & conditions -->
 <div class="footer-information">&copy; Brazilian Fitdance | KVK: 82899150 | <a href="privacy-policy.html" class="privacy-policy">Privacy Policy</a> | <a href="terms-conditions.html" class="privacy-policy">Terms &amp; Conditions</a>
 </div>
+	
 <!--Back to top arrow-->
-<img onClick="scrollToTop()" class="arrow-up" src="../images/icons/arrowUp.svg" height="30" width="40" alt="arrow up image"/>
+<img onClick="scrollToTop()" class="arrow-up" src="../images/icons/arrowUp.svg" alt="arrow up image"/>
 </footer>
 </div>
 <script src="../script/script.js"></script>

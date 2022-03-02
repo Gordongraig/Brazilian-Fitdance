@@ -8,14 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fitdance</title>
 <link href="css/stylessheet.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
-<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
 <script>
-function MM_DW_effectPuff(obj,method,effect,percent,speed)
-{
-    obj[method](effect, { percent:percent}, speed);
-}
 function MM_goToURL() { //v3.0
   var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
   for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
@@ -24,10 +17,11 @@ function MM_goToURL() { //v3.0
 </head>
 <body>
 <div class="wrapper">
+
 <!--Logo on the left side of the header-->
-<div class="dropdown">
 <header>
-<a href="index.html"><img src="images/icons/logo1.svg" alt="logo Brazilian Fitdance" width="80" height="80" class="logo"/></a>
+<a href="index.html"><img src="images/icons/logo1.svg" alt="logo Brazilian Fitdance" class="logo"/></a>
+
 <!--Navigation menu-->
 <nav>
 <ul>
@@ -36,79 +30,67 @@ function MM_goToURL() { //v3.0
 <li><a href="pages/events.html">EVENTS</a></li>
 <li><a href="pages/pricing.html">PRICING</a></li>
 <li><a href="pages/schedule.html">SCHEDULE</a></li>
-<li class="dropdown"><a href="#">MEDIA <i class="fas fa-caret-down"></i></a>
-<ul class="dropdown-content">
 <li><a href="pages/photos.html">PHOTOS</a></li>
 <li><a href="pages/videos.html">VIDEOS</a></li>
-</ul>
-</li>
-<li class="dropdown"><a href="#">FITDANCE <i class="fas fa-caret-down"></i></a> 
-<ul class="dropdown-content">
-<li><a href="about.html">ABOUT</a></li>
-<li><a href="contact.html">CONTACT</a></li>
-<li><a href="register.html">REGISTER</a></li>
-<li><a href="about.html">THE TEACHER</a></li>
-</ul>
-</li>
+<li><a href="pages/register.html">REGISTER</a></li>
+<li><a href="pages/contact.html">CONTACT</a></li>
+<li><a href="pages/about.html">ABOUT</a></li>
 </ul>
 </nav>
 </header>
-</div>
 <main>
-<!--Image slide-->
-<img src="images/hero.png" alt="hero image Brazilian Fitdance" class="hero-image" id="Image1" onload="MM_DW_effectPuff($(this),'toggle','puff',300,4000);MM_DW_effectPuff($(this),'show','puff',300,2000)">
-<!--About Fitdance introduction-->
-<section>
-<h1 class="index-heading">Burn calories whilst moving your body to funk music!</h1>
-<!--
-<div class="introduction">
-<p>Brazilian FitDance is a conditioning training where every week new movements to one.<br>
-Brazilian funk song is played on repeat for one and a half hour with one break in between.</p>
-<p>Participants start with a few movements and slowly more are added every round and everything is repeated to the same song until the time is up.<br> 
-It’s a fast paced aerobics class which include but are not limited to movements such as twerking, squats, kicks, jumps, running in place and moving planks.</p>
-</div>
--->
-</section>
+
+<!--Hero image-->
+<img src="images/hero.png" alt="hero image Brazilian Fitdance" class="hero-image">
+	
+<!--Fitdance slogan-->
+<h1 class="homepage-slogan">Burn calories whilst moving your body to funk music!</h1>
+<hr>
+
+
 <!--Bullit points-->
 <div class="bullit-points">
 <ul> 
-<li>Entertaining</li>
-<li>Suitable for everyone</li>
-<li>Increase your stamina</li>
-<li>Perfect workout</li>
-<li>Burning calories</li>
 <li>Working out with music</li>
+<li>Suitable for everyone</li>
+<li>Entertaining</li>
+<li>Burn your calories</li>
+<li>Perfect workout</li>
+<li>Increase your stamina</li>
 </ul>
 </div>
-<!--Group image dance class-->
-<aside class="card-home">
-<video width="450" height="250" controls autoplay>
-<source src="videos/intro-vid.m4v" type="video/mp4">
+
+<!--Video dance class-->
+<video class="video-container"  width="450" height="250" controls autoplay muted loop>
+<source src="videos/intro-video.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-</aside>
+<!--</div>-->
+
 <!--Call to action buttons-->
-<div class="index-btn">
-<input name="schedule-btn" type="button" class="cta-btn" onClick="MM_goToURL('parent','pages/schedule.html');return document.MM_returnValue" value="SCHEDULE">
-<input name="pricing-btn" type="button" class="cta-btn" id="pricing-btn-index" onClick="MM_goToURL('parent','pages/pricing.html');return document.MM_returnValue" value="PRICING">
+<div class="homepage-btn">
+<input name="schedule-btn" type="button" class="cta-btn-homepage" id="schedule-btn-homepage" onClick="MM_goToURL('parent','pages/schedule.html');return document.MM_returnValue" value="SCHEDULE">
+<input name="pricing-btn" type="button" class="cta-btn-homepage" id="pricing-btn-homepage" onClick="MM_goToURL('parent','pages/pricing.html');return document.MM_returnValue" value="PRICING">
 </div>
 </main>
+	
 <!--Footer navigation-->
-  <footer class="footer">
-  <div class="navigation-footer">
-  <ul>
-  <li><a href="index.html" class="highlight-active">HOME</a></li>
-  <li><a href="pages/agenda.html">AGENDA</a></li>
-  <li><a href="pages/events.html">EVENTS</a></li>
-  <li><a href="pages/pricing.html">PRICING</a></li>
-  <li><a href="pages/schedule.html">SCHEDULE</a></li>
-  <li><a href="pages/photos.html">PHOTOS</a></li>
-  <li><a href="pages/videos.html">VIDEOS</a></li>
-  <li><a href="pages/register.html">REGISTER</a></li>
-  <li><a href="pages/contact.html">CONTACT</a></li>
-  <li><a href="pages/about.html">ABOUT</a></li>
-  </ul>
-  </div>
+<footer class="footer">
+<div class="navigation-footer">
+<ul>
+<li><a href="index.html" class="highlight-active">HOME</a></li>
+<li><a href="pages/agenda.html">AGENDA</a></li>
+<li><a href="pages/events.html">EVENTS</a></li>
+<li><a href="pages/pricing.html">PRICING</a></li>
+<li><a href="pages/schedule.html">SCHEDULE</a></li>
+<li><a href="pages/photos.html">PHOTOS</a></li>
+<li><a href="pages/videos.html">VIDEOS</a></li>
+<li><a href="pages/register.html">REGISTER</a></li>
+<li><a href="pages/contact.html">CONTACT</a></li>
+<li><a href="pages/about.html">ABOUT</a></li>
+</ul>
+</div>
+
 <!--Social media icons-->
  <div class="social-icons">
  <ul>
@@ -119,13 +101,15 @@ Your browser does not support the video tag.
  </ul>
  </div>
  <hr>
-<!--Privacy policy & Terms & conditions -->
+
+ <!--Privacy policy & Terms & conditions -->
 <div class="footer-information">&copy; Brazilian Fitdance | KVK: 82899150 | <a href="pages/privacy-policy.html" class="privacy-policy">Privacy Policy</a> | <a href="pages/terms-conditions.html" class="privacy-policy">Terms &amp; Conditions</a>
 </div>
+	  
 <!--Back to top arrow-->
-<img onClick="scrollToTop()" class="arrow-up" src="images/icons/arrowUp.svg" height="30" width="40" alt="arrow up image"/>
+<img onClick="scrollToTop()" class="arrow-up" src="images/icons/arrowUp.svg" alt="arrow up image"/>
 </footer>
 </div>
-<script src="script/script.js"></script>
+<script src="../script/script.js"></script>
 </body>
 </html>
